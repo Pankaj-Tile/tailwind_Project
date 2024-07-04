@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
+/* btn class created and use in html file and this btn is apply using @apply */
+.btn{
+    @apply mx-4 px-4 py-2 bg-purple-500 text-white rounded-md hover:bg-purple-900 active:bg-teal-800 focus:outline-red-300;
+}
+/* 
+.style{
+    @apply text-yellow-200 bg-green-300;
+} */
+
+/* by placing custom class above utilities give prefrence to my created class */
 @tailwind utilities;
+/* by placing custom class below utilities give prefrence to utility classes of the tailwind */
+
