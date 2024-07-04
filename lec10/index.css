@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+
+@tailwind utilities;
+
+/* if we want to add apply directives after base/components/utilities then we can use layer directive as shown in index.css */
+@layer components{
+    /* here along with layer we define name of layer after the classes is going to add */
+    .btn{
+        @apply text-white bg-red-600 rounded-md px-2 mx-4
+    }
+}
